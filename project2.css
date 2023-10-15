@@ -1,0 +1,251 @@
+.parallax {
+    background-image: url("https://builtin.com/sites/www.builtin.com/files/styles/ckeditor_optimize/public/inline-images/inside-crypto-cryptocurrency.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-inline {
+    display: flex;
+    margin-left: 950px;
+}
+
+#firstDiv {
+    background-color: rgb(91, 186, 245);
+}
+
+h1 {
+    font-family: 'Courier New';
+    text-align: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    bottom: 54px;
+    left: 230px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#cardDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    margin: 20px;
+}
+
+.more-info {
+    margin: 0px;
+    width: 200px;
+}
+
+.collapse {
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.more-info-img {
+    width: 90px;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: #ddd;
+}
+
+#myBar {
+    width: 10%;
+    height: 30px;
+    background-color: #eaea17;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+
+#popUpDiv {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(94, 93, 93, 0.437);
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    display: none;
+}
+
+.popUp {
+    border: solid black 5px;
+    position: fixed;
+    top: calc(50% - 315px);
+    width: 500px;
+    height: 630px;
+    background-color: antiquewhite;
+    left: calc(50% - 250px);
+    z-index: 10;
+}
+
+.toggle {
+    bottom: 50px;
+    left: 400px;
+
+}
+
+.coinsDiv {
+    border: 1px solid;
+    height: 100px;
+    padding: 5px;
+}
+
+.button-45 {
+    margin: auto;
+    align-items: center;
+    background-color: #FFE7E7;
+    background-position: 0 0;
+    border: 1px solid #FEE0E0;
+    border-radius: 11px;
+    box-sizing: border-box;
+    color: #D33A2C;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 33.4929px;
+    list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+    padding: 2px 12px;
+    text-align: left;
+    text-decoration: none;
+    text-shadow: none;
+    text-underline-offset: 1px;
+    transition: border .2s ease-in-out, box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    word-break: break-word;
+}
+
+.button-45:active,
+.button-45:hover,
+.button-45:focus {
+    outline: 0;
+}
+
+
+.button-45:active {
+    background-color: #D33A2C;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #FFFFFF;
+}
+
+.button-45:hover {
+    background-color: #FFE3E3;
+    border-color: #FAA4A4;
+}
+
+.button-45:active:hover,
+.button-45:focus:hover,
+.button-45:focus {
+    background-color: #D33A2C;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #FFFFFF;
+}
+
+.popUpTitle {
+    text-align: center;
+}
+
+#myChart {
+    display: none;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    max-height: 500px;
+    max-width: 60%;
+}
+
+#myImage {
+    width: 10%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+#aboutDiv {
+    text-align: center;
+}
+
+/* את ההתאמה לתצוגת מובייל עושים בסוף הסי-אס-אס */
+@media only screen and (max-width: 350px) {
+    .switch {
+        left: 180px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .parallax {
+        min-height: 400px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .parallax {
+        min-height: 300px;
+    }
+}
