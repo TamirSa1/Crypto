@@ -5,7 +5,7 @@ HTML + CSS
 - CSS3 media queries and advanced selectors 
 - Dynamic page layouts 
 - Bootstrap & flex
-- 
+  
 JavaScript 
 - Objects 
 - Callbacks, Promises, Async Await 
